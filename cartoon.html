@@ -4,7 +4,7 @@
   <style>
     canvas {
       border: 1px solid black;
-      background: lightgrey;
+      background: lightblue;
     }
   </style>
 </head>
@@ -20,73 +20,93 @@
 
 // Draw the head
     context.beginPath();
-    context.arc(200, 100, 50, 0, 2 * Math.PI);
+    context.arc(500, 100, 50, 0, 2 * Math.PI);
     context.fillStyle = "yellow";
     context.fill();
     context.stroke();
 
 // Draw the eyes
     context.beginPath();
-    context.arc(185, 90, 5, 0, 2 * Math.PI);
+    context.arc(485, 90, 5, 0, 2 * Math.PI);
     context.fillStyle = "black";
     context.fill();
     context.stroke();
 
     context.beginPath();
-    context.arc(215, 90, 5, 0, 2 * Math.PI);
+    context.arc(515, 90, 5, 0, 2 * Math.PI);
     context.fill();
     context.stroke();
 
 // Draw the mouth
     context.beginPath();
-    context.arc(200, 115, 20, 0, Math.PI, false);
+    context.arc(500, 115, 20, 0, Math.PI, false);
     context.stroke();
 
 // Draw the body
     context.beginPath();
-    context.rect(185, 150, 30, 100);
+    context.rect(485, 150, 30, 100);
     context.fillStyle = "lightgreen";
     context.fill();
     context.stroke();
 
 // Draw the arms
     context.beginPath();
-    context.moveTo(185, 150);
-    context.lineTo(150, 200);
+    context.moveTo(485, 150);
+    context.lineTo(450, 200);
     context.stroke();
 
     context.beginPath();
-    context.moveTo(215, 150);
-    context.lineTo(250, 200);
+    context.moveTo(515, 150);
+    context.lineTo(550, 200);
     context.stroke();
 
 // Draw the legs
     context.beginPath();
-    context.moveTo(195, 250);
-    context.lineTo(185, 600);
+    context.moveTo(495, 250);
+    context.lineTo(485, 600);
     context.stroke();
 
     context.beginPath();
-    context.moveTo(205, 250);
-    context.lineTo(215, 600);
+    context.moveTo(505, 250);
+    context.lineTo(515, 600);
     context.stroke();
  
 //draw grassGround
      context.save();
      context.beginPath();
      context.moveTo(0,400);
-     context.bezierCurveTo(200,300,500,500,800,450);
+     context.bezierCurveTo(100,300,3000,100,800,450);
      context.lineTo(800,600);
      context.lineTo(0,800);
      context.closePath();
      context.fillStyle = "DarkGreen";
      context.fill();
      context.restore(); 
+
+//draw cloud    
+     context.beginPath();
+     context.moveTo(170, 80);
+     context.bezierCurveTo(170, 100, 130, 150, 230, 150);
+     context.bezierCurveTo(250, 180, 320, 180, 340, 150);
+     context.bezierCurveTo(420, 150, 420, 120, 390, 100);
+     context.bezierCurveTo(430, 40, 370, 30, 340, 50);
+     context.bezierCurveTo(320, 5, 250, 20, 250, 50);
+     context.bezierCurveTo(200, 5, 150, 20, 170, 80);
+     context.closePath();
+     context.lineWidth = 1;
+     context.fillStyle = 'white';
+     context.fill();
+     context.strokeStyle = 'white';
+     context.stroke();
  
 // Draw the moon
     context.beginPath();
     context.arc(50, 50, 40, 0, Math.PI * 2, false);
     context.fillStyle = "yellow";
+    context.fill();
+    context.beginPath();
+    context.arc(600, 50, 40, 0, Math.PI * 2, false);
+    context.fillStyle = "lightgrey";
     context.fill();
 
   </script>
