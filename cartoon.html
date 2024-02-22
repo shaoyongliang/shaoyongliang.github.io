@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    canvas {
+      border: 1px solid black;
+      background: grey;
+    }
+  </style>
+</head>
+<body>
+  <h1>Charater</h1>
+  <h3><a href="https://shaoyongliang.github.io/">Back to my portfolio page</a></h3>
+  <hr/>
+  <br/>
+  <canvas id="Cartoon" width="500" height="500" style="border:1px solid #d3d3d3;"></canvas>
+<script>
+// Get the canvas element
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+
+// Set the background color
+ctx.fillStyle = "#87CEEB";
+ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+// Draw the sun
+ctx.beginPath();
+ctx.arc(100, 100, 50, 0, 2 * Math.PI);
+ctx.fillStyle = "#FFFF00";
+ctx.fill();
+
+// Draw the ground
+ctx.fillStyle = "#008000";
+ctx.fillRect(0, 300, 500, 200);
+
+// Draw a house
+ctx.fillStyle = "#8B4513";
+ctx.fillRect(200, 200, 100, 100);
+ctx.fillStyle = "#000000";
+ctx.fillRect(250, 250, 20, 50);
+
+// Draw grass using a for loop
+ctx.fillStyle = "#32CD32";
+for (var i = 0; i < 500; i += 20) {
+    ctx.fillRect(i, 300, 10, 20);
+}
+
+// Add some caption text
+ctx.font = "30px Arial";
+ctx.fillStyle = "#000000";
+ctx.fillText("My Cartoon!", 10, 50);
+</script>
+
+</body>
+</html>
