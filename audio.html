@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h1> Audio Lab </h1>
+    <h2><a href="https://shaoyongliang.github.io">Back to Portfolio Page</a></h2>
+    <br>
+    <hr/>  
+    <title>Sound Effect Machine</title>
+    <style>
+        .sound-machine {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+
+        .sound-button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 25px;
+            background-color:pink;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="sound-machine">
+        <button class="sound-button" onclick="playSound('assets/audio/drum.mp3')">Drum</button>
+        <button class="sound-button" onclick="playSound('assets/audio/rain.mp3')">Raining</button>
+        <button class="sound-button" onclick="playSound('assets/audio/bell.mp3')">Bell Rings</button>
+        <button class="sound-button" onclick="playSound('assets/audio/bass.mp3')">Bass</button>
+        <button class="sound-button" onclick="playSound('assets/audio/mrlawrence.mp3')">Merry Christmas Mr. Lawrence</button>
+    </div>
+
+    <script>
+        function playSound(soundFile) {
+            const audio = new Audio(soundFile);
+            audio.play();
+        }
+    </script>
+</body>
+</html>
