@@ -1,5 +1,5 @@
 body{
-   background-image: url('assets\animation\background.png');
+   background-image: url('..Assets\animation\background.png');
    background-repeat: no-repeat;
    background-size: auto 456px;
 }
