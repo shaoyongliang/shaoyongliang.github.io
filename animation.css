@@ -1,14 +1,14 @@
 body{
-   background-image: url("background.png");
+   background-image: url("assets/animation/background.png");
    background-repeat: no-repeat;
    background-size: auto 456px;
 }
 
 
 img {
-    position: absolute; /* Position the image */
-    left: 0; /* Start from the left edge */
-    animation: moveRight 4s linear infinite; /* Animation to move right */
+    position: absolute;
+    left: 0;
+    animation: moveRight 4s linear infinite;
 }
 
 @keyframes moveRight {
@@ -16,6 +16,6 @@ img {
         left: 0;
     }
     100% {
-        left: 100%; /* Move to the right edge */
+        left: 100%;
     }
 }
