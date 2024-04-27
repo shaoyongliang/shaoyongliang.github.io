@@ -1,7 +1,7 @@
 # CISC3610 PROJECT
 ## My Porfolio Page
 
-## Lab:
+## Homework Lab:
 1. [Fruit](http://shaoyongliang.github.io/fruit.html)
 2. [Audio](http://shaoyongliang.github.io/audio.html)
 
@@ -10,3 +10,4 @@
 2. [Animation](http://shaoyongliang.github.io/animation.html)
 3. [Form](http://shaoyongliang.github.io/form.html)
 4. [Video Animation](http://shaoyongliang.github.io/videoanimation.html)
+5. [Data Visualization](http://shaoyongliang.github.io/datavisualization.html)
