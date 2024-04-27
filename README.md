@@ -9,3 +9,4 @@
 1. [Cartoon](http://shaoyongliang.github.io/cartoon.html)
 2. [Animation](http://shaoyongliang.github.io/animation.html)
 3. [Form](http://shaoyongliang.github.io/form.html)
+4. [Video Animation](http://shaoyongliang.github.io/VideoAnimation.html)
